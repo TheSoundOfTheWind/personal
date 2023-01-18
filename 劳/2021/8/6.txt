@@ -1,0 +1,72 @@
+外若著相，内心即乱。外若离相，心即不乱。本性自净自定，只为见境思境即乱。若见诸境心不乱者，是真定也。
+************************************************Arrangement**********************************************
+1.显示原始的top view yes
+2.能够测量原始的top view no
+3.查看基金涨跌 yes
+4.回家整理基金买入信息 no
+5.整理买入公式 no
+************************************************Assets**********************************************
+-----------------------------energyTree--------------------------------
+ - buddhist
+ - meditate
+----------------------------emotionTree---------------------------------
+ - family
+    - wife
+    - parent
+    - brother
+    - relative
+ - classmate
+ - colleague
+   和陈献聊读取切bin的读qshape文件怎么读的问题（tile_data）
+   和纾媛讨论跑gbflow的问题
+   
+----------------------------knowledgeTree---------------------------------
+ - cooking
+ - digital
+ - economics
+ - medicine 
+ - question
+ - investment
+ - computer
+----------------------------materialTree--------------------------------
+ - natural
+ - manMade
+ - health
+    - sleep
+    - eat
+	  吃早餐（茶叶蛋、豆浆）
+    - sport
+    - wash
+*************************************************Debt**********************************************
+------------------------------energyTree------------------------------------
+ - tenEvil
+
+----------------------------emotionTree---------------------------------
+ - family
+    - wife
+    - parent
+    - brother
+ - classmate
+
+------------------------------knowledgeTree--------------------------------
+ - study
+ - favor
+ - entertainment
+   看小说、玩游戏
+-----------------------------materialTree-------------------------------------
+ - food
+   买早餐（4元）
+ - travel
+ - house
+ - clothes
+ - badEat
+ - badSleep
+ - excretion
+ - insurance
+ - treatment  
+ - communication
+
+
+
+
+

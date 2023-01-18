@@ -1,0 +1,85 @@
+外若著相，内心即乱。外若离相，心即不乱。本性自净自定，只为见境思境即乱。若见诸境心不乱者，是真定也。
+************************************************Arrangement**********************************************
+1.给gbflow添加两条命令 
+  -set_ignore_shield_net yes/no -> IGNORE_DEF_SNET_SHIELD:YES (默认为yes不用加)
+  -set_max_via_length value -> MAX_VIA_ARRAY_LENGTH: 6
+2.整理python笔记 
+3.写gxviewer 任务相关的code 
+4.实践和理论之间的相互促进和进步的理论
+5.将美团商家注册的教程发给亚亚
+6.学习什么是资本
+7.给亚林申请一张腾讯大王卡
+************************************************Assets**********************************************
+-----------------------------energyTree--------------------------------
+ - buddhist
+ - meditate
+----------------------------emotionTree---------------------------------
+ - family
+    - wife
+    - parent
+    - brother
+    - relative
+ - classmate
+ - colleague
+ 
+----------------------------knowledgeTree---------------------------------
+ - cooking
+ - digital
+ - economics
+ - medicine 
+ - question
+ - investment
+ - computer
+   a1:
+   1.判断一个字符串是否是数字 C
+   2.一个浮点型数取绝对值的方法 C
+   a2:
+   3.python字符串大小写的方法
+   a4:
+   实践->发现问题、疑惑、新知->解决问题->积累总结
+   a5 ok
+   a6:
+   
+----------------------------materialTree--------------------------------
+ - natural
+ - manMade
+ - health
+    - sleep
+    - eat
+    - sport
+    - wash
+*************************************************Debt**********************************************
+------------------------------energyTree------------------------------------
+ - tenEvil
+
+----------------------------emotionTree---------------------------------
+ - family
+    - wife
+    - parent
+    - brother
+ - classmate
+
+------------------------------knowledgeTree--------------------------------
+ - study
+ - favor
+ - entertainment
+   听书
+   玩游戏
+   
+-----------------------------materialTree-------------------------------------
+ - food
+ - travel
+ - house
+ - clothes
+ - badEat
+ - badSleep
+   3:30~9:00
+ - excretion
+ - insurance
+ - treatment  
+ - communication
+
+
+
+
+
