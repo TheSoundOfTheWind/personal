@@ -1,0 +1,17 @@
+GLSL-着色器语言
+《GLSLLangSpec.1.20》
+
+OpenGL
+《3D拾取》
+《OpenGL.Programming.Guide.8th.Edition.Mar.2013》
+《opengl_tutotial》
+
+OGS
+《OpenSceneGraph_3.0》
+
+计算机图形学
+《3D_Math_Primer_for_Graphics_and_Game_Development_2nd_Ed_gnv64》
+
+《Fundamentals_of_Computer_Graphics_Fourth_Edition》
+传说中的龙书、虎书、鲸书中的虎书，计算机图形学的经典教材之一
+
