@@ -1,0 +1,12 @@
+#轴对齐包围盒
+AABB(axis-aligned minimum bounding box)
+
+#有向包围盒
+OBB(Oriented Bounding Box)
+
+#球体
+包围球
+
+#8-DOP
+
+#凸壳

@@ -1,0 +1,34 @@
+阿里的开源镜像站
+http://mirrors.aliyun.com/
+
+在”OS镜像“ 菜单栏中选择系统和相应的版本
+
+各个版本的ISO镜像文件说明：
+CentOS-7-x86_64-DVD-1708.iso 标准安装版（推荐）
+
+CentOS-7-x86_64-Everything-1708.iso 完整版，集成所有软件（以用来补充系统的软件或者填充本地镜像）
+
+CentOS-7-x86_64-LiveGNOME-1708.iso GNOME桌面版
+
+CentOS-7-x86_64-LiveKDE-1708.iso KDE桌面版
+
+CentOS-7-x86_64-Minimal-1708.iso 精简版，自带的软件最少
+
+CentOS-7-x86_64-NetInstall-1708.iso 网络安装版（从网络安装或者救援系统）
+
+使用ventoy可以下载ios文件后直接copy U盘中就可以作为一个系统盘，简单方便
+https://www.ventoy.net/cn/
+
+然后进入window系统开始刷分区
+window10默认自带三个分区
+260MB状态良好（EFI系统分区）
+100GBWindows-SSD(C:)状态良好（启动、页面文件、..)
+1000MB状态良好（恢复分区）
+除了这三个分区之外都是可以压缩卷和删除卷的分区，不会引起window10系统崩溃
+
+安装centos或ubuntu选择手动分区
+各分区的大小
+/boot     1024MB
+/boot/efi 200MB
+/swap     2GB
+/         剩下所有

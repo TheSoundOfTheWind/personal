@@ -1,0 +1,110 @@
+1. Qt库下载:
+opensuse.osuosl.org/pub/blfs/conglomeration/qt5/
+https://download.qt.io
+
+archive	各种 Qt 开发工具安装包，新旧都有（可以下载 Qt 开发环境和源代码）。
+community_releases	社区定制的 Qt 库，Tizen 版 Qt 以及 Qt 附加源码包。
+development_releases	开发版，有新的和旧的不稳定版本，在 Qt 开发过程中的非正式版本。
+learning	有学习 Qt 的文档教程和示范视频。
+ministro	迷你版，目前是针对 Android 的版本。
+official_releases	正式发布版，是与开发版相对的稳定版 Qt 库和开发工具（可以下载Qt开发环境和源代码）。
+online	Qt 在线安装源。
+snapshots	预览版，最新的开发测试中的 Qt 库和开发工具。
+
+
+archive 和 official_releases 两个目录都有最新的 Qt 开发环境安装包，我们以 archive 目录里的内容为例来说明。点击进入 archive 目录，会看到四个子目录：
+archive的四个子目录
+进入 archive 目录
+
+vsaddin	这是 Qt 针对 Visual Studio 集成的插件，本教程基本不使用 Visual Studio ，所以不需要插件。
+qtcreator	这是 Qt 官方的集成开发工具，但是 qtcreator 本身是个空壳，它没有编译套件和 Qt 开发库。
+除了老版本的 Qt 4 需要手动下载 qtcreator、编译套件、Qt 开发库进行搭配之外，一般用不到。对于我们教程压根不需要下载它，因为 Qt 5 有专门的大安装包，里面包含开发需要的东西，并且能自动配置好。
+
+qt	这是 Qt 开发环境的下载目录，我们刚说的 Qt 5 的大安装包就在这里面。
+
+online_installers	在线安装器，国内用户不建议使用，在线安装是龟速，还经常断线。我们教程采用的全部是离线的大安装包。
+
+中国科学技术大学：http://mirrors.ustc.edu.cn/qtproject/
+清华大学：https://mirrors.tuna.tsinghua.edu.cn/qt/
+北京理工大学：http://mirror.bit.edu.cn/qtproject/
+中国互联网络信息中心：https://mirrors.cnnic.cn/qt/
+
+2.Qt库解压
+tar -xvJf xxx.tar.xz
+
+3.创建build目录
+创建一个和解压Qt库平级的build目录，在这个目录中进行操作防止
+Qt源码包被污染
+
+4.编写build 脚本
+qt的编译参数很多所以还是建议用脚本来写，防止乱掉
+(脚本请参考当前目录的build.sh)
+
+5.安装编译依赖库
+# 这是QT官网推荐的
+ubuntu
+sudo apt install libfontconfig1-dev libfreetype6-dev\
+     libx11-dev libxext-dev libxfixes-dev libxi-dev\
+     libxrender-dev libxcb1-dev libx11-xcb-dev\
+     libxcb-glx0-dev libxkbcommon-x11-dev
+libx11-dev
+libx11-xcb-dev
+libxext-dev
+libxfixes-dev
+libxi-dev
+libxrender-dev
+libxcb1-dev
+libxcb-glx0-dev
+libxcb-keysyms1-dev
+libxcb-image0-dev
+libxcb-shm0-dev
+libxcb-icccm4-dev
+libxcb-sync0-dev
+libxcb-xfixes0-dev
+libxcb-shape0-dev
+libxcb-randr0-dev
+libxcb-render-util0-dev
+libxcd-xinerama-dev (should be libxcb-xinerama0-dev on ubuntu 18.04)
+libxkbcommon-dev
+libxkbcommon-x11-dev
+sudo apt-get install libx11-*
+sudo apt-get install libx11*
+
+sudo apt-get install libxcb-*
+sudo apt-get install libxcb*
+
+sudo apt-get install libxkbcommon-devsudo
+sudo apt-get install libxkbcommon-x11-dev
+
+# 这是我在ubuntu 20.04上面根据警告和错误日志额外安装的
+sudo apt install build-essential mesa-common-dev libdbus-1-dev
+
+
+
+#安装xcb的库，不然platforms目录会缺少libqxcb.so的库，导致qt程序启动不起来
+进入网址：xcb.freedesktop.org
+下载xcb-proto 1.13，解压 tar zxvf fileName.tar.gz,编译
+下载libxcb1.13,编译
+https://blog.csdn.net/luoyayun361/article/details/118493387
+
+centos
+libxcb libxcb-devel libXrender libXrender-devel xcb-util-wm
+ xcb-util-wm-devel xcb-util xcb-util-devel xcb-util-image 
+ xcb-util-image-devel xcb-util-keysyms xcb-util-keysyms-devel
+
+6.编译
+make -j15
+
+7.安装到指定目录(目录在build.sh中配置）(因为牵扯到/opt这个系统目录，所以要加sudo权限）
+sudo make install
+
+8.添加系统字体
+进入目录：/opt/qt-5.14.0-linux/lib,创建字体目录fonts,可以把.ttf字体文件拷贝到字体目录中
+系统字体一般在/usr/share/fonts目录下
+$ find /usr/share/fonts -name "*ttf" -exec cp {} ./ \;
+
+9.环境配置
+source compileAndRun.sh 脚本配置编译和运行环境
+
+
+

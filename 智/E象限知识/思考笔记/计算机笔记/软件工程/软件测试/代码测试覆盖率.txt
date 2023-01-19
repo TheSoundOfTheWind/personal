@@ -1,0 +1,3 @@
+https://blog.csdn.net/whahu1989/article/details/121296840
+
+https://itecnote.com/tecnote/gcovr-generate-a-0-coverage-report-if-cppgcno-and-gcda-files-are-not-present-at-same-folder/

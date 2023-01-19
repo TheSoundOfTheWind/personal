@@ -1,0 +1,19 @@
+osg官网：http://www.openscenegraph.com/index.php
+
+安装OpenGL库： sudo apt-get install mesa-common-dev freeglut3 freeglut3-dev
+下载osg最新release : https://github.com/openscenegraph/OpenSceneGraph
+编译
+mkdir build
+cd build
+cmake ../OpenSceneGraph
+make
+sudo make install 
+
+#指定安装路径
+#没有管理员权限可以不用sudo，但安装目录必须得是个人有权限的目录
+sudo make DESTDIR=/install/directory install 
+or
+./configure --prefix=/pathToInstall
+
+#安装测试用例
+https://www.openscenegraph.com/index.php/download-section/data
