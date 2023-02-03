@@ -4,7 +4,8 @@
 
 2. error: passing ‘const XXX’ as ‘this’ argument discards qualifiers [-fpermissive]
 
-原因：通过一个const对象调用一个没有被const修饰的函数，这样可能会改变const对象的值，所以这是一个error。所以以后所有参数内用const XXX & 修饰参数，这个被修饰的参数也只能调用被const修饰的函数，不能调用非const修饰的函数。
+原因：通过一个const对象调用一个没有被const修饰的函数，这样可能会改变const对象的值，所以这是一个error。
+所以以后所有参数内用const XXX & 修饰参数，这个被修饰的参数也只能调用被const修饰的函数，不能调用非const修饰的函数。
 
 3.error: invalid conversion from ‘const A*’ to ‘A*’ [-fpermissive]
 原因，尝试将某个对象的权限扩大，这是不允许的，默认只能将大权限的缩小，反之则不行
